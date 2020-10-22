@@ -111,7 +111,7 @@ REST_FRAMEWORK = {
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Argentina/Buenos_Aires'
 
 USE_I18N = True
 
@@ -124,3 +124,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Open Weather Map API settings
+OWM_API = {
+    'KEY': None,  # Set your API key!
+    'BASE_URL': 'https://api.openweathermap.org/data/2.5'
+}
+
+# Cache timeout limit in seconds
+CUSTOM_CACHE_TIMEOUT = 300
