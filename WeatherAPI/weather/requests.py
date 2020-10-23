@@ -10,7 +10,7 @@ def get_weather_data(city, country, timestamp=None):
     Args:
         city (str): Name of the city
         country (str): Country code
-        timestamp (datetime): Timestamp that represents the moment the information is requested
+        timestamp (datetime.datetime): Timestamp that represents the moment the information is requested
     Returns:
         City
     Raises:
@@ -47,7 +47,7 @@ def get_forecast_data(city, country, days, timestamp=None):
         city (str): Name of the city
         country (str): Country code
         days (int): days to include in forecast
-        timestamp (datetime): Timestamp that represents the moment the information is requested
+        timestamp (datetime.datetime): Timestamp that represents the moment the information is requested
     """
     owm_api_key = settings.OWM_API.get('KEY')
     owm_api_url = settings.OWM_API.get('BASE_URL')
