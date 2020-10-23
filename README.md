@@ -13,10 +13,11 @@ Small API implemented with Django and Django Rest Framework that fetches weather
 6. Proceed to the Examples section to start using the API
 
 ## Testing
+*NOTE: Add your Open Weather Map API Key before running tests*
 Navigate to ./WeatherAPI and execute `python manage.py test`
 
 ## Examples
-*NOTE: Remember to add your Open Weather Map API Key before attempting to perform a request!*
+*NOTE: Add your Open Weather Map API Key before performing a request*
 
 This API exposes 2 endpoints:
 
