@@ -1,13 +1,16 @@
-def kelvin_to_celsius(temp_k):
+def get_cache_key(city, country, days=None):
     """
-    Converts a temperature from Kelvin to Celsius
+    Returns a key for caching the weather information of a City
 
     Args:
-        temp_k (float): Temperature in K°
+        city (str): Name of the city
+        country (str): Country code
+        days (int): Number of days to get forecast
     """
-    if temp_k < 0:
-        raise ValueError(f"K° value cannot be negative: {temp_k}")
-    return temp_k - 273.15
+    if days is None:
+        return city.upper().replace(' ', '') + country.upper()
+    else:
+        return city.upper().replace(' ', '') + country.upper() + str(days)
 
 
 def get_wind_angle_description(deg):

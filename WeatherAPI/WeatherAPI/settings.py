@@ -128,8 +128,10 @@ STATIC_URL = '/static/'
 # Open Weather Map API settings
 OWM_API = {
     'KEY': None,  # Set your API key!
-    'BASE_URL': 'https://api.openweathermap.org/data/2.5'
+    'BASE_URL': 'https://api.openweathermap.org/data/2.5',
+    'PARTS_TO_EXCLUDE': 'minutely,hourly,alerts',
+    'UNITS': 'metric'
 }
 
 # Cache timeout limit in seconds
-CUSTOM_CACHE_TIMEOUT = 300
+CUSTOM_CACHE_TIMEOUT = 120
